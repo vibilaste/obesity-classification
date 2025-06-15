@@ -10,7 +10,7 @@ scaler = joblib.load('scaler.pkl')
 st.title("Memprediksi Tingkat Obesitas")
 
 # Input
-gender = st.selectbox("Jenis Kelamin", ["Laki Laki", "Perempuan"])
+gender = st.selectbox("Jenis Kelamin", ["Male", "Female"])
 age = st.number_input("Usia", min_value=10, max_value=100, value=25)
 height = st.number_input("Tinggi Badan (m)", min_value=1.0, max_value=2.5, value=1.70)
 weight = st.number_input("Berat Badan (kg)", min_value=30.0, max_value=200.0, value=70.0)
