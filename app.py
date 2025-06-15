@@ -7,7 +7,7 @@ import numpy as np
 model = joblib.load('rf_model.pkl')
 scaler = joblib.load('scaler.pkl')
 
-st.title("Memprediksi Tingkat Obesitas")
+st.title("Prediksi Tingkat Obesitas")
 
 # Input
 gender = st.selectbox("Jenis Kelamin", ["Male", "Female"])
